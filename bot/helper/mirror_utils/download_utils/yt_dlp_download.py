@@ -66,7 +66,7 @@ class YoutubeDLHelper:
                      'writethumbnail': True,
                      'trim_file_name': 220,
                      'ffmpeg_location': f"/bin/{bot_cache['pkgs'][2]}",
-                     'extractor_args': {'youtube': {'player_client': ['android', 'web', 'tv']}},
+                     'extractor_args': {'youtube': {'player_client': ['ios', 'android', 'web']}},
                      'retry_sleep_functions': {'http': lambda n: 3,
                                                'fragment': lambda n: 3,
                                                'file_access': lambda n: 3,
