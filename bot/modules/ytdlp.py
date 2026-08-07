@@ -470,7 +470,7 @@ async def _ytdl(client, message, isLeech=False, sameDir=None, bulk=[]):
     if 'mdisk.me' in link:
         name, link = await _mdisk(link, name)
 
-    options = {'usenetrc': True, 'extractor_args': {'youtube': {'player_client': ['android', 'web', 'tv']}}}
+    options = {'usenetrc': True, 'extractor_args': {'youtube': {'player_client': ['ios', 'android', 'web']}}}
     if await aiopath.exists('cookies.txt'):
         options['cookiefile'] = 'cookies.txt'
         
